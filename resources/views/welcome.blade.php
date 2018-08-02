@@ -35,16 +35,16 @@
                     </h1>
                     <ul class="list-reset">
                         <li class="inline pr-8">
-                            <a href="https://forge.laravel.com" class="no-underline hover:underline text-sm font-normal text-brand-dark uppercase" title="Forge">Documentation</a>
+                            <a href="https://github.com/jimmerioles/backend-developer-challenge" class="no-underline hover:underline text-sm font-normal text-brand-dark uppercase" title="Forge">Documentation</a>
                         </li>
                         <li class="inline pr-8">
-                            <a href="https://github.com/laravel/laravel" class="no-underline hover:underline text-sm font-normal text-brand-dark uppercase" title="GitHub">GitHub</a>
+                            <a href="https://github.com/jimmerioles" class="no-underline hover:underline text-sm font-normal text-brand-dark uppercase" title="GitHub">GitHub</a>
                         </li>
                         <li class="inline pr-8">
-                            <a href="https://laravel.com/docs" class="no-underline hover:underline text-sm font-normal text-brand-dark uppercase" title="Documentation">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/jimwisleymerioles" class="no-underline hover:underline text-sm font-normal text-brand-dark uppercase" title="Documentation">LinkedIn</a>
                         </li>
                         <li class="inline pr-8">
-                            <a href="https://laracasts.com" class="no-underline hover:underline text-sm font-normal text-brand-dark uppercase" title="Laracasts">Twitter</a>
+                            <a href="https://twitter.com/jimmerioles" class="no-underline hover:underline text-sm font-normal text-brand-dark uppercase" title="Laracasts">Twitter</a>
                         </li>
                     </ul>
                 </div>
