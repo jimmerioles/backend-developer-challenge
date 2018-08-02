@@ -40,9 +40,20 @@ $ php artisan migrate
 ## Usage
 
 Register an account and you can start searching for tweets and see your search activity:
+
 ![screenshot from 2018-08-02 22-47-39](https://user-images.githubusercontent.com/9766310/43593823-5dbf2faa-96ab-11e8-9469-2ce606c14fc5.png)
 
+## Testing
 
+``` bash
+$ phpunit
+```
+
+#### Show full specs and features:
+
+``` bash
+$ phpunit --testdox
+```
 
 ## Change log
 
