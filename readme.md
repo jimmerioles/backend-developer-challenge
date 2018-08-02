@@ -19,7 +19,7 @@ Note: Heroku free dynos sleep after 30 minutes of inactivity so sometimes your f
 
 ### Installation
 
-Make sure that your system/server has the required system [requirements](https://laravel.com/docs/5.6#server-requirements) and [Composer](https://getcomposer.org) installed.
+Make sure that your system/server has the required system [requirements](https://laravel.com/docs/5.6#server-requirements) and [Composer](https://getcomposer.org) installed. Or you can use [Homestead](https://laravel.com/docs/5.6/homestead).
 
 #### 1. Clone repository and install.
 ```bash
