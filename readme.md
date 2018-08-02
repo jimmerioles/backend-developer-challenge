@@ -17,6 +17,14 @@ Note: Heroku free dynos sleep after 30 minutes of inactivity so sometimes your f
 
 ## Usage
 
+### Installation
+Make sure that your system/server has installed the right [requirements](https://laravel.com/docs/5.6#server-requirements)
+#### 1. Clone repository and install.
+```bash
+git clone https://github.com/jimmerioles/backend-developer-challenge.git
+composer install
+```
+
 ### Access Token
 
 Create account and generate Personal Access Token. API consumers should specify their access token as a Bearer token in the Authorization header of their request.
