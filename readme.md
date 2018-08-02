@@ -15,8 +15,6 @@ Note: Heroku free dynos sleep after 30 minutes of inactivity so sometimes your f
 ## Built With
 * Laravel 5.6
 
-## Usage
-
 ### Requirements
 
 Make sure that your system/server has the required system [requirements](https://laravel.com/docs/5.6#server-requirements) and [Composer](https://getcomposer.org) installed. Or you can use [Homestead](https://laravel.com/docs/5.6/homestead).
@@ -24,31 +22,24 @@ Make sure that your system/server has the required system [requirements](https:/
 ### Installation
 
 #### 1. Clone repository and install.
+
 ```bash
 $ git clone https://github.com/jimmerioles/backend-developer-challenge.git
 $ composer install
 ```
 
-### Access Token
-
-Create account and generate Personal Access Token. API consumers should specify their access token as a Bearer token in the Authorization header of their request.
-
-
-
-### API Endpoints
-![Endpoints](https://user-images.githubusercontent.com/9766310/43558474-471ed09e-963c-11e8-9489-0c572a2a852e.png)
-
-
-### Sample API Request
-``` bash
-$ curl --request GET 
- --url 'http://twitter-like-search-api-server.herokuapp.com/api/1.1/search/tweets.json?q=promise' 
- --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY0NjQzMzc4NDI4YjVhMDRmMjdlMmFiM2MyNWVmYzA3ZjM2Mzc5Mzc4ZWJkOTlmNGYxMzVhODE3OGRmOWQyMGQ1ZjJkOGI2YjM2MGM1Y2Y1In0.eyJhdWQiOiIxIiwianRpIjoiZjQ2NDMzNzg0MjhiNWEwNGYyN2UyYWIzYzI1ZWZjMDdmMzYzNzkzNzhlYmQ5OWY0ZjEzNWE4MTc4ZGY5ZDIwZDVmMmQ4YjZiMzYwYzVjZjUiLCJpYXQiOjE1MzMxNzYzODYsIm5iZiI6MTUzMzE3NjM4NiwiZXhwIjoxNTY0NzEyMzg2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.UMi-0NgCBCrYAhMOsStJBQtPruryB7_8FBnsnmQ76JQgcLR8uwc-yTw9WE21MJ0g6Ro7HryYTshYez16PiPffW-ieg-rGGSY-R2SLc1NkyqRD5x2kpQGki-7k346mNFUf-mRJezySSPVFp98xNkYJw-I86B7GeM4zq1rtpxiXJ3SHAUqXjOTS9hTWM_2DbAdSr66M-3yYjZS8IY_6adUcXSj2fQonrdb9kyCuLZ-QpcWhZIXPjlnRPV0ONBASf_AHReNnrzhzbh13jbKpEYK3dnnzhPibNJMTuqNUU5uAkMDSJs2rt4EPnh3k-1wzBDH1Ch86Rt3FpYTZlfk7cQmquRllnkJjJS99x22LZjm9K-AVfPBFtu7DjBpj0w8QHwLgty1ZDHLzNxrhcuYL9qWrquqnDoWrX6lUOWgNxMJnfn0oeNoMWPElZDtKZmihZgSpRruWf5Hu3VqHOJLpCr06aC9plV65In9WPT0izc15bChO-pB8DFNHruZ5uOazJhmNyacUV4ZrguTsBCnD34lnPKkgL7q5RfVCEoRbd5vlkMwHqzKNmEM9zw33H9LhAfSlatNKxK0_Boorlq2gNyGdX9szgJ09rPvFUZioi93OHzXn6w7OSrsA3O08vLLNugEveG2NMb7NfALOxm6Di8LeUKQN23tf_ooGlJtIuGXDig'
-  --header 'Accept: application/json'
+#### 2. Configure settings/environment variables and migrations.
+```bash
+$ cp .env.example .env
+$ php artisan key:generate
+$ php artisan migrate
 ```
 
-### Sample API Response
-![Response](https://user-images.githubusercontent.com/9766310/43559018-b3dc248c-963e-11e8-842c-f3bcef56a0f7.png)
+## Usage
+
+Register an account and you can start searching for tweets and see your search activity:
+![screenshot from 2018-08-02 22-47-39](https://user-images.githubusercontent.com/9766310/43593823-5dbf2faa-96ab-11e8-9469-2ce606c14fc5.png)
+
 
 
 ## Change log
