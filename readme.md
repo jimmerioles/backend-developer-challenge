@@ -4,7 +4,7 @@
 # [Backend Developer Challenge](https://github.com/jimmerioles/backend-developer-challenge)
 Allows you to search tweets from [Twitter-like Search API Server](https://github.com/jimmerioles/twitter-like-search-api-server) that I also created for this challenge as an alternative to Twitter's Search API. Consumes same but simpler format with Twitter Seach Api JSON response data from [Twitter-like Search API Server](https://github.com/jimmerioles/twitter-like-search-api-server).
 
-Note: Heroku free dynos sleep after 30 minutes of inactivity so be sure to visit first http://twitter-like-search-api-server.herokuapp.com to wake it up before checking it out.
+Note: Heroku free dynos sleep after 30 minutes of inactivity so sometimes your first request might take a bit longer to receive response.
 
 ## Features
 
@@ -14,13 +14,14 @@ Note: Heroku free dynos sleep after 30 minutes of inactivity so be sure to visit
 
 ## Built With
 * Laravel 5.6
-* TailwindCSS
 
 ## Usage
 
 ### Access Token
 
 Create account and generate Personal Access Token. API consumers should specify their access token as a Bearer token in the Authorization header of their request.
+
+
 
 ### API Endpoints
 ![Endpoints](https://user-images.githubusercontent.com/9766310/43558474-471ed09e-963c-11e8-9489-0c572a2a852e.png)
