@@ -1,60 +1,78 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+![Backend Developer Challenge](https://user-images.githubusercontent.com/9766310/43590565-d74adb4c-96a3-11e8-8ff1-d47ead279588.png)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
-## About Laravel
+# [Backend Developer Challenge](https://github.com/jimmerioles/backend-developer-challenge)
+Allows you to search tweets from [Twitter-like Search API Server](https://github.com/jimmerioles/twitter-like-search-api-server) that I also created for this challenge as an alternative to Twitter's Search API. Consumes same but simpler format with Twitter Seach Api JSON response data from [Twitter-like Search API Server](https://github.com/jimmerioles/twitter-like-search-api-server).
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+Note: Heroku free dynos sleep after 30 minutes of inactivity so sometimes your first request might take a bit longer to receive response.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+* Search tweets with keywords
+* Record and show search activities
+* Authentication
 
-## Learning Laravel
+## Built With
+* Laravel 5.6
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+## Usage
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+### Access Token
 
-## Laravel Sponsors
+Create account and generate Personal Access Token. API consumers should specify their access token as a Bearer token in the Authorization header of their request.
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
+
+### API Endpoints
+![Endpoints](https://user-images.githubusercontent.com/9766310/43558474-471ed09e-963c-11e8-9489-0c572a2a852e.png)
+
+
+### Sample API Request
+``` bash
+$ curl --request GET 
+ --url 'http://twitter-like-search-api-server.herokuapp.com/api/1.1/search/tweets.json?q=promise' 
+ --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY0NjQzMzc4NDI4YjVhMDRmMjdlMmFiM2MyNWVmYzA3ZjM2Mzc5Mzc4ZWJkOTlmNGYxMzVhODE3OGRmOWQyMGQ1ZjJkOGI2YjM2MGM1Y2Y1In0.eyJhdWQiOiIxIiwianRpIjoiZjQ2NDMzNzg0MjhiNWEwNGYyN2UyYWIzYzI1ZWZjMDdmMzYzNzkzNzhlYmQ5OWY0ZjEzNWE4MTc4ZGY5ZDIwZDVmMmQ4YjZiMzYwYzVjZjUiLCJpYXQiOjE1MzMxNzYzODYsIm5iZiI6MTUzMzE3NjM4NiwiZXhwIjoxNTY0NzEyMzg2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.UMi-0NgCBCrYAhMOsStJBQtPruryB7_8FBnsnmQ76JQgcLR8uwc-yTw9WE21MJ0g6Ro7HryYTshYez16PiPffW-ieg-rGGSY-R2SLc1NkyqRD5x2kpQGki-7k346mNFUf-mRJezySSPVFp98xNkYJw-I86B7GeM4zq1rtpxiXJ3SHAUqXjOTS9hTWM_2DbAdSr66M-3yYjZS8IY_6adUcXSj2fQonrdb9kyCuLZ-QpcWhZIXPjlnRPV0ONBASf_AHReNnrzhzbh13jbKpEYK3dnnzhPibNJMTuqNUU5uAkMDSJs2rt4EPnh3k-1wzBDH1Ch86Rt3FpYTZlfk7cQmquRllnkJjJS99x22LZjm9K-AVfPBFtu7DjBpj0w8QHwLgty1ZDHLzNxrhcuYL9qWrquqnDoWrX6lUOWgNxMJnfn0oeNoMWPElZDtKZmihZgSpRruWf5Hu3VqHOJLpCr06aC9plV65In9WPT0izc15bChO-pB8DFNHruZ5uOazJhmNyacUV4ZrguTsBCnD34lnPKkgL7q5RfVCEoRbd5vlkMwHqzKNmEM9zw33H9LhAfSlatNKxK0_Boorlq2gNyGdX9szgJ09rPvFUZioi93OHzXn6w7OSrsA3O08vLLNugEveG2NMb7NfALOxm6Di8LeUKQN23tf_ooGlJtIuGXDig'
+  --header 'Accept: application/json'
+```
+
+### Sample API Response
+![Response](https://user-images.githubusercontent.com/9766310/43559018-b3dc248c-963e-11e8-842c-f3bcef56a0f7.png)
+
+
+## Change log
+
+Please see [CHANGELOG][link-changelog] for more information on what has changed recently.
+
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Open for suggestions and requests. Please request through [issue][link-issue] or [pull requests][link-pull-request].
 
-## Security Vulnerabilities
+## Security
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+If you discover any security related issues, please email jimwisleymerioles@gmail.com instead of using the issue tracker.
+
+## Credits
+
+- [Jim Merioles][link-author]
+- [Contributors][link-contributors]
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
+
+### Want to show some :heart:?
+
+Let's find Satoshi Nakamoto! | or let's have a :coffee:
+------------ | ------------
+![Donate Bitcoin][ico-bitcoin] | ![Donate Ethereum][ico-ethereum]
+
+
+[ico-bitcoin]: https://img.shields.io/badge/Bitcoin-1KBT3Mzsr2dZqhQqNYx4gum8Yuyd61UzNk-blue.svg?style=flat-square
+[ico-ethereum]: https://img.shields.io/badge/Ethereum-0x7896E9C4118e495Eb7001a847BBFA3C29Dfc69d9-blue.svg?style=flat-square
+
+[link-author]: https://twitter.com/jimmerioles
+[link-contributors]: https://github.com/jimmerioles/twitter-like-search-api-server/graphs/contributors
+[link-changelog]: https://github.com/jimmerioles/twitter-like-search-api-server/releases
+[link-issue]: https://github.com/jimmerioles/twitter-like-search-api-server/issues/new
+[link-pull-request]: https://github.com/jimmerioles/twitter-like-search-api-server/pull/new/master
