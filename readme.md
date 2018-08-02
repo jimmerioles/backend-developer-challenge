@@ -23,8 +23,8 @@ Make sure that your system/server has the required system [requirements](https:/
 
 #### 1. Clone repository and install.
 ```bash
-git clone https://github.com/jimmerioles/backend-developer-challenge.git
-composer install
+$ git clone https://github.com/jimmerioles/backend-developer-challenge.git
+$ composer install
 ```
 
 ### Access Token
