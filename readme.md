@@ -18,7 +18,9 @@ Note: Heroku free dynos sleep after 30 minutes of inactivity so sometimes your f
 ## Usage
 
 ### Installation
-Make sure that your system/server has installed the right [requirements](https://laravel.com/docs/5.6#server-requirements)
+
+Make sure that your system/server has the required system [requirements](https://laravel.com/docs/5.6#server-requirements) and [Composer](https://getcomposer.org) installed.
+
 #### 1. Clone repository and install.
 ```bash
 git clone https://github.com/jimmerioles/backend-developer-challenge.git
