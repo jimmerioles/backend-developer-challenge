@@ -13,6 +13,7 @@ Note: Heroku free dynos sleep after 30 minutes of inactivity so sometimes your f
 * Search tweets with keywords
 * Record and show search activities
 * Authentication
+* Consumes data from [Twitter-like Search API Server](https://github.com/jimmerioles/twitter-like-search-api-server)
 
 ## Built With
 * Laravel 5.6
