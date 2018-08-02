@@ -1,19 +1,20 @@
-![Twitter-like Search API Server](https://user-images.githubusercontent.com/9766310/43558271-29cf6a68-963b-11e8-9849-1db2c5226143.png)
+![Backend Developer Challenge](https://user-images.githubusercontent.com/9766310/43590565-d74adb4c-96a3-11e8-8ff1-d47ead279588.png)
 
-# [Twitter-like Search API Server](http://twitter-like-search-api-server.herokuapp.com)
-This Web API provides simple dummy tweets data with same JSON response structure with Twitter's Search API. Please feel free to use the endpoint for your project. Available in http://twitter-like-search-api-server.herokuapp.com
 
-Note: Heroku free dynos sleep after 30 minutes of inactivity so sometimes your first request might take a bit longer to receive response.
+# [Backend Developer Challenge](https://github.com/jimmerioles/backend-developer-challenge)
+Allows you to search tweets from [Twitter-like Search API Server](https://github.com/jimmerioles/twitter-like-search-api-server) that I also created for this challenge. Consumes same but simpler format with Twitter Seach Api JSON response data from [Twitter-like Search API Server](https://github.com/jimmerioles/twitter-like-search-api-server).
+
+Note: Heroku free dynos sleep after 30 minutes of inactivity so be sure to visit first http://twitter-like-search-api-server.herokuapp.com to wake it up before checking it out.
 
 ## Features
 
-* Uses OAuth2 instead of Oauth v1.0a
-* Same response data structure but simpler
-* [Live and hosted on heroku](http://twitter-like-search-api-server.herokuapp.com)
+* Search tweets with keywords
+* Record and show search activities
+* Authentication
 
 ## Built With
 * Laravel 5.6
-* OAuth2
+* TailwindCSS
 
 ## Usage
 
